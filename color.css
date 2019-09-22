@@ -1,13 +1,42 @@
-body{
-
-	font-family: 'Libre Baskerville', serif;
-
-	font-size: .8em;
-	width: 800px;
-	margin:auto;
-}
-h1{
-    font-family: Arial BLack;
+body {
+    font-family: sans-serif;
     font-size: .8em;
-    
+    overflow: auto;
+}
+
+header {
+    text-align: center;
+    height: 100px;
+    font-family: "Times New Roman";
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+    color: #E6CFC9;
+}
+
+header h1 {
+    padding: 50px;
+}
+
+#picture {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+#content {
+    background-color: #FDF4F2;
+    font-family: 'Didot', serif;
+    color: #797A7C;
+    font-size: 1vw;
+    height: 150px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+footer {
+    padding: 7px;
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 1vw;
 }
