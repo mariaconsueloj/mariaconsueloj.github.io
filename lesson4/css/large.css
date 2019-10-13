@@ -1,0 +1,12 @@
+@media only screen and (min-width: 40em) {
+    ul li {
+        float: left;
+    }
+    .menu {
+        display: none;
+    }
+    .shown,
+    .hidden {
+        display: block;
+    }
+}

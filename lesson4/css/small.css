@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+    font-size: .8em;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-family: "Times New Roman";
+    letter-spacing: 10px;
+    font-size: 1.5em;
+    color: #C3E3E8;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 1em;
+    color: #69828A;
+}
+
+h3 {
+    font-family: 'Parisienne', cursive;
+    color: #69828A;
+    font-size: 2.2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #69828A;
+}
+
+ul li {
+    float: none;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #E8F0F4;
+}
+
+.menu {
+    display: block;
+}
+
+.shown {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.content1 {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 10px;
+    width: 300px;
+    border: 1px solid #69828A;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content2 {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 10px;
+    width: 300px;
+    border: 1px solid #69828A;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content3 {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 10px;
+    width: 300px;
+    border: 1px solid #69828A;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content4 {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 10px;
+    width: 300px;
+    border: 1px solid #69828A;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    text-align: center;
+    background-color: #E8F0F4;
+    font-family: "Arial Bold", Gadget, sans-serif;
+    margin: 5px;
+    padding: 25px;
+}
+
+section p {
+    text-align: justify;
+    font-family: 'Assistant', sans-serif;
+}
+
+footer {
+    padding: 7px;
+    color: #E8F0F4;
+    text-align: center;
+    font-size: 1em;
+    margin: 1px auto;
+    margin-top: -1px;
+    background-color: #69828A;
+    text-align: center;
+    font-family: "Times New Roman";
+}
