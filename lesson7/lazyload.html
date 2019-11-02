@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/blur.css" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <script type="text/javascript" src="functions.js"></script>
+    <script>
+        function start() {
+            updateDates();
+            windChill();
+        }
+    </script>
+    <title>Weather Site</title>
+</head>
+
+<header>
+    <img src="images/logo.svg" alt="logo" width="90px">
+    <h1>
+        SURAIN WEATHER
+    </h1>
+</header>
+
+<h2>
+    "There is not such things as bad weather, just soft people" <br> -Bill Bowerman
+</h2>
+
+<nav>
+    <ul>
+        <li><a class="menu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <span class="hidden" id="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="lazyload.html">Gallery</a></li>
+        </span>
+    </ul>
+</nav>
+
+<!-- <button onclick="toogleMenu()">Click Me</button> -->
+
+<body onload="start()">
+
+    </head>
+
+    <body>
+        <main>
+            <h3>
+                Gallery
+            </h3>
+            <div class="pictures">
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/cloudy.jpg" alt='cloudy'>
+                    <figcaption>CLoudy Weather</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/rain.jpg" alt='rain'>
+                    <figcaption>Rain</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/sunny.jpg" alt='sunny'>
+                    <figcaption>Sunny Weather</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/snow.jpg" alt='snow'>
+                    <figcaption>Snowy Weather</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/tornado.jpg" alt='tornado'>
+                    <figcaption>Tornado</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder-image.jpg" data-src="images/rainbow.jpg" alt='rainbow'>
+                    <figcaption>Rainbow</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            &copy;Surain Weather | Consuelo Hansen
+            <br><span id="currentDate"></span>
+        </footer>
+        <script type="text/javascript" src="lazyload.js"></script>
+    </body>
+
+</html>
