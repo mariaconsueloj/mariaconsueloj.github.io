@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 50em) {
     ul li {
         float: left;
     }
@@ -15,6 +15,12 @@
     main {
         width: 80%;
         margin: auto;
+    }
+    .pictures {
+        grid-template-columns: auto auto auto;
+    }
+    figure:hover {
+        box-shadow: 5px 5px 5px 5px #69828A;
     }
     th {
         padding: 15px;
