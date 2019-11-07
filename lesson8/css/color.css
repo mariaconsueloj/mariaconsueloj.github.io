@@ -1,6 +1,5 @@
-html {
-    font-family: Ubuntu, sans-serif;
-    text-align: center;
+body {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 table,
@@ -10,6 +9,10 @@ td {
     text-align: center;
     border-collapse: collapse;
     padding: 8px;
+}
+
+table {
+    box-shadow: 10px 10px 5px #628ca6;
 }
 
 thead tr td {
