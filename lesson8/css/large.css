@@ -16,11 +16,6 @@
         width: 80%;
         margin: auto;
     }
-    .personal {
-        text-align: left;
-        font-size: .8em;
-        border-color: #69828A;
-    }
     .pictures {
         grid-template-columns: auto auto auto;
     }

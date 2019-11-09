@@ -1,0 +1,47 @@
+fieldset {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+form fieldset {
+    border: 2px solid #69828A;
+    border-radius: 10px;
+    padding: .5rem 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+form legend {
+    color: #69828A;
+    margin: 0 1rem;
+    padding: 10px;
+}
+
+legend {
+    color: #C3E3E8;
+}
+
+form label.personal input:required {
+    border-left: red solid 3px;
+}
+
+form label.personal input:required:valid {
+    border-left: green solid 3px;
+}
+
+textarea {
+    height: 70px;
+    width: 50%;
+}
+
+.submitButton {
+    display: block;
+    border: none;
+    background-color: #69828A;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 1rem 2%;
+    margin-left: 15%;
+}
