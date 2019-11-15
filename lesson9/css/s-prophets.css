@@ -1,0 +1,41 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+main,
+footer {
+    max-width: 2000px;
+    margin: initial;
+    padding: 10px;
+    text-align: center;
+}
+
+section img {
+    width: 70%;
+    margin: 2em;
+}
+
+section {
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    background-color: #E6CFC9;
+    border: 1px solid #797A7C;
+    text-align: center;
+}
+
+h1 {
+    color: #797A7C;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+}
+
+birth,
+place {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", sans-serif;
+}
