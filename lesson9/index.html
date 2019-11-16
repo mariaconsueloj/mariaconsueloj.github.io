@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link type="text/css" rel="stylesheet" href="css/stormcenter.css" />
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="rating.js"></script>
+    <script>
+        function start() {
+            updateDates();
+        }
+    </script>
+    <title>Weather Site</title>
+</head>
+
+<header>
+    <img src="images/logo.svg" alt="logo" width="90px">
+    <h1>
+        SURAIN WEATHER
+    </h1>
+</header>
+
+<h2>
+    "There is not such things as bad weather, just soft people" <br> -Bill Bowerman
+</h2>
+
+<nav>
+    <ul>
+        <li><a class="menu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <span class="hidden" id="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class="active" href="preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </span>
+    </ul>
+</nav>
+
+<body onload="start()">
+    <main>
+        <div class="article1">
+            <h2>Snow Storms</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Tempor commodo ullamcorper a lacus vestibulum sed. Sit amet facilisis
+                magna etiam tempor orci eu lobortis. Est pellentesque elit ullamcorper dignissim. Volutpat ac tincidunt vitae semper quis. Euismod elementum nisi quis eleifend quam. Pharetra convallis posuere morbi leo urna. Mi ipsum faucibus vitae aliquet.
+                Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Lobortis elementum nibh tellus molestie nunc. Mauris pellentesque pulvinar pellentesque habitant morbi. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.
+                Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Et sollicitudin ac orci phasellus egestas tellus rutrum. Ac turpis egestas maecenas pharetra convallis posuere morbi. In nulla posuere sollicitudin aliquam ultrices sagittis.
+                Hac habitasse platea dictumst quisque sagittis purus sit. Vel pharetra vel turpis nunc eget. In massa tempor nec feugiat nisl pretium fusce id velit.</p>
+            <img id="snowy" src="images/article.jpg" alt="snow storm" width="450px">
+
+        </div>
+
+        <div class="cards"></div>
+
+        <div class="wireframe">
+            <p>
+                You can find the wireframe link <a href="https://wireframe.cc/vxzUXu">HERE</a>:
+            </p>
+        </div>
+
+
+    </main>
+</body>
+<footer>
+    &copy;Surain Weather | Consuelo Hansen
+    <br><span id="currentDate"></span>
+</footer>
+<script src="js/town.js"></script>
+
+
+</html>
