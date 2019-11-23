@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="windchill.js"></script>
+    <script>
+        function start() {
+            updateDates();
+            windChill();
+        }
+    </script>
+    <title>Weather Site</title>
+</head>
+
+<header>
+    <img src="images/logo.svg" alt="logo" width="90px">
+    <h1>
+        SURAIN WEATHER
+    </h1>
+</header>
+
+<h2>
+    "There is not such things as bad weather, just soft people" <br> -Bill Bowerman
+</h2>
+
+<nav>
+    <ul>
+        <li><a class="menu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <span class="hidden" id="navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+        </span>
+    </ul>
+</nav>
+
+<!-- <button onclick="toogleMenu()">Click Me</button> -->
+
+<body onload="start()">
+
+    <main>
+        <h3>Preston Idaho</h3>
+
+        <div class="box">
+            <picture class="prestonimg">
+                <source srcset="images/large.png" media="(min-width: 54rem)">
+                <source srcset="images/medium.png" media="(min-width:20rem) and (max-width: 30rem)">
+                <source srcset="images/small.png" media="(max-width: 19rem)">
+                <img src="images/large.png" alt="preston picture">
+                <!-- <img src="images/large.png" alt="preston">  -->
+            </picture>
+
+            <div id="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Cloudy<br> High: <span id="high">37</span>°F<br> Wind Chill: <span id="windChill"></span>°F <br> Humidity: 79%<br> Wind Speed: <span id="speed">4</span>mph</p>
+            </div>
+        </div>
+
+        <div id="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <table id="weather">
+                <tr class="tableHeader">
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr class="tableBody">
+                    <th><img src="images/snow.svg" width="auto" height="30"><br>48°F</th>
+                    <th><img src="images/cloud.svg" width="auto" height="30"><br>54°F</th>
+                    <th><img src="images/cloud.svg" width="auto" height="30"><br>50°F</th>
+                    <th><img src="images/sun.svg" width="auto" height="30"><br>49°F</th>
+                    <th><img src="images/sun.svg" width="auto" height="30"><br>50°F</th>
+                    <th><img src="images/sun.svg" width="auto" height="30"><br>51°F</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="article">
+            <h3>Article</h3>
+            <h4>by Consuelo Hansen</h4>
+            <p>
+                <img id="imgtreetop" src="images/trees.jpeg" alt="trees" width="300px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <img id="imgtreebottom" src="images/trees.jpeg" alt="trees" width="300px">
+            </p>
+        </div>
+
+        <div id="contact">
+            <h3>Surain Weather Site</h3>
+            <img id="imgmap" src="images/map.PNG" alt="map" width="220px">
+            <p>
+                30N 1st E
+                <br> Preston, ID 83263
+                <br><br> 999.999.999
+                <br> surainweather@tws.com
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        &copy;Surain Weather | Consuelo Hansen
+        <br><span id="currentDate"></span>
+    </footer>
+
+</body>
+
+</html>
