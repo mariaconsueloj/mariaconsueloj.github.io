@@ -11,11 +11,12 @@
     <link type="text/css" rel="stylesheet" href="css/small.css" />
     <link type="text/css" rel="stylesheet" href="css/large.css" />
     <script type="text/javascript" src="functions.js"></script>
-    <script type="text/javascript" src="windchill.js"></script>
+    <script type="text/javascript" src="api10.js"></script>
+
     <script>
         function start() {
             updateDates();
-            windChill();
+            forecast();
         }
     </script>
     <title>Weather Site</title>
@@ -64,7 +65,7 @@
 
             <div id="summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Cloudy<br> High: <span id="high">37</span>°F<br> Wind Chill: <span id="windChill"></span>°F <br> Humidity: 79%<br> Wind Speed: <span id="speed">4</span>mph</p>
+                <p>Currently: <span id='weather'></span><br> High: <span id="high"></span>°F<br> Wind Chill: <span id="windChill"></span>°F<br> Humidity: <span id="humid"></span>%<br> Wind Speed: <span id="speed"></span>mph</p>
             </div>
         </div>
 
@@ -72,20 +73,18 @@
             <h3>5 Day Forecast</h3>
             <table id="weather">
                 <tr class="tableHeader">
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
+                    <th id="day0">Mon</th>
+                    <th id="day1">Tue</th>
+                    <th id="day2">Wed</th>
+                    <th id="day3">Thu</th>
+                    <th id="day4">Fri</th>
                 </tr>
                 <tr class="tableBody">
-                    <th><img src="images/snow.svg" width="auto" height="30"><br>48°F</th>
-                    <th><img src="images/cloud.svg" width="auto" height="30"><br>54°F</th>
-                    <th><img src="images/cloud.svg" width="auto" height="30"><br>50°F</th>
-                    <th><img src="images/sun.svg" width="auto" height="30"><br>49°F</th>
-                    <th><img src="images/sun.svg" width="auto" height="30"><br>50°F</th>
-                    <th><img src="images/sun.svg" width="auto" height="30"><br>51°F</th>
+                    <th><img id="day0i" src="" width="auto" height="30"><br><span id="day0t"></span>°F</th>
+                    <th><img id="day1i" src="" width="auto" height="30"><br><span id="day1t"></span>°F</th>
+                    <th><img id="day2i" src="" width="auto" height="30"><br><span id="day2t"></span>°F</th>
+                    <th><img id="day3i" src="" width="auto" height="30"><br><span id="day3t"></span>°F</th>
+                    <th><img id="day4i" src="" width="auto" height="30"><br><span id="day4t"></span>°F</th>
                 </tr>
             </table>
         </div>
