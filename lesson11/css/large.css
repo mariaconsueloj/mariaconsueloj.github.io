@@ -1,0 +1,63 @@
+@media only screen and (min-width: 40em) {
+    ul li {
+        float: left;
+    }
+    .menu {
+        display: none;
+    }
+    .shown,
+    .hidden {
+        display: block;
+    }
+    #fiveDay {
+        display: block;
+    }
+    main {
+        width: 80%;
+        margin: auto;
+    }
+    th {
+        padding: 15px;
+    }
+    #contact {
+        width: 50%;
+        column-count: 2;
+    }
+    #contact p {
+        padding-top: 100px;
+    }
+    #article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #summary {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+        padding: 15px;
+        margin: 10px;
+        border: 1px;
+        background-color: #E8F0F4;
+        color: #69828A;
+        opacity: .80;
+    }
+    #imgarticle {
+        display: block;
+        float: right;
+        margin: 15px;
+        margin-top: -30px;
+    }
+    #imgarticlebottom {
+        display: none;
+    }
+    #imgmap {
+        display: block;
+        margin: 20px;
+        margin-top: -30px;
+        box-align: right;
+    }
+    .events {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+}

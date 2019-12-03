@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="fishhavenapi.js"></script>
+    <script type="text/javascript" src="events.js"></script>
+
+    <script>
+        function start() {
+            updateDates();
+            forecast();
+        }
+    </script>
+    <title>Weather Site</title>
+</head>
+
+<header>
+    <img src="images/logo.svg" alt="logo" width="90px">
+    <h1>
+        SURAIN WEATHER
+    </h1>
+</header>
+
+<h2>
+    "There is not such things as bad weather, just soft people" <br> -Bill Bowerman
+</h2>
+
+<nav>
+    <ul>
+        <li><a class="menu" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <span class="hidden" id="navigation">
+        <li><a href="lesson9/index.html">Home</a></li>
+        <li><a href="preston-11.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="lesson7/gallery-7.html">Gallery</a></li>
+        </span>
+    </ul>
+</nav>
+
+<!-- <button onclick="toogleMenu()">Click Me</button> -->
+
+<body onload="start()">
+
+    <main>
+        <h3>Fish Haven</h3>
+
+        <div class="box">
+            <picture class="fishHavenimg">
+                <!-- <source srcset="images/large.png" media="(min-width: 54rem)">
+                <source srcset="images/medium.png" media="(min-width:20rem) and (max-width: 30rem)">
+                <source srcset="images/small.png" media="(max-width: 19rem)"> -->
+                <img src="images/fish-haven1.jpg" alt=" fish haven picture">
+                <!-- <img src="images/large.png" alt="preston">  -->
+            </picture>
+
+            <div id="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id='weather'></span><br> High: <span id="high"></span>°F<br> Wind Chill: <span id="windChill"></span>°F<br> Humidity: <span id="humid"></span>%<br> Wind Speed: <span id="speed"></span>mph</p>
+            </div>
+        </div>
+
+        <div id="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <table id="weather">
+                <tr class="tableHeader">
+                    <th id="day0">Mon</th>
+                    <th id="day1">Tue</th>
+                    <th id="day2">Wed</th>
+                    <th id="day3">Thu</th>
+                    <th id="day4">Fri</th>
+                </tr>
+                <tr class="tableBody">
+                    <th><img id="day0i" src="" width="auto" height="30"><br><span id="day0t"></span>°F</th>
+                    <th><img id="day1i" src="" width="auto" height="30"><br><span id="day1t"></span>°F</th>
+                    <th><img id="day2i" src="" width="auto" height="30"><br><span id="day2t"></span>°F</th>
+                    <th><img id="day3i" src="" width="auto" height="30"><br><span id="day3t"></span>°F</th>
+                    <th><img id="day4i" src="" width="auto" height="30"><br><span id="day4t"></span>°F</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="events"></div>
+
+
+        <div id="article">
+            <h3>Article</h3>
+            <h4>by Consuelo Hansen</h4>
+            <p>
+                <img id="imgarticle" src="images/fish-haven.jpg" alt="fishhaven" width="300px"> Fish Haven is the most amazing place to be with the family during winter time. They have lots of concerts and family frinedly activities, like scavenger hunts
+                and karaoke.<br> This past weekend I was there with my famiy, we went to a concert of a local music group and they had a fire place and smores. Is a really good place to enjoy some family time and the fresh air.<br> Other great activities
+                that they have during the day and in summer is competitions in the lake where they do some competitions by age range, which is really nice so you can make new friends and enjoy meeting new people for different places. <br> My favorite
+                part is the food trucks that they have after the competitions, they have a picnic area where you can take naps and eat, and enjoy you vacations. <br> Also, they have a lot of places where you can do hiking and camping with no signal so
+                you can just focus on spending time with your close friends and family.
+                <img id="imgarticlebottom" src="images/fish-haven.jpg" alt="fishhaven" width="300px">
+            </p>
+        </div>
+
+        <div id="contact">
+            <h3>Surain Weather Site</h3>
+            <img id="imgmap" src="images/fish-havenmap.PNG" alt="map" width="220px">
+            <p>
+                30N 1st E
+                <br> Fish Haven, ID 83263
+                <br><br> 999.999.999
+                <br> surainweather@tws.com
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        &copy;Surain Weather | Consuelo Hansen
+        <br><span id="currentDate"></span>
+    </footer>
+    <script>
+        getEvents("Fish Haven");
+    </script>
+</body>
+
+</html>
