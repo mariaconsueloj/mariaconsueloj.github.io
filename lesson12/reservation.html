@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Ubuntu&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <title>Temple Site</title>
+</head>
+
+<header>
+    <img src="images/logo.png" alt="logo" width="90px">
+    <h1>
+        The Temple Inn & Suits
+    </h1>
+    <ul class="topnav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li>
+            <div class="dropdown">
+                <a href="services.html">Services</a>
+                <div class="dropdown-content">
+                    <a href="reception.html">Reception</a>
+                    <a href="fulltime.html">Full Time Missionaries</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+
+    <h2>
+        Reservation
+    </h2>
+    <form method="get" action="reservationcheck.html">
+        <fieldset>
+            <legend>Reservation Info</legend>
+            <label class="personal">Destination <br><input type="text" pattern="[A-Za-z]{5,}" title="Letters only" required></label> <br>
+            <label for="theDate">Start Date <br><input type="date" name="theDate"></label><br>
+            <label for="theDate">End Date <br><input type="date" name="theDate"></label><br>
+            <label class="personal">Number of People <br><input type="number" name="number"></label><br>
+            <label class="top"> Type of Room<br>
+                <select name="type of room">
+                    <option value="">Select</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="queen">Queen</option>    
+                    <option value="king">King</option>       
+                </select>
+        </label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="personal">Full Name <br><input type="text" pattern="[A-Za-z]{5,}" title="Letters only" required></label> <br>
+            <label class="personal">Phone <br><input type="tel" name="text" placeholder="(   )" pattern="(^(\d{3}(\-)?\d{3}(\-)?\d{4})$)" title="Format: xxx-xxx-xxxx" required></label><br>
+            <label class="personal" for="email"> Email <br><input type="email" name="email" placeholder= "example@email.com"></label><br>
+            <label class="personal" for="email"> Home State or Country <br><input type="state/country" name="state/country" placeholder= "Utah""></label><br>
+
+        </fieldset>
+        <fieldset class="comments">
+            <legend>Special Accomodations/Comments</legend>
+            <label><textarea rows="10"  name="comment" ></textarea></label>
+        </fieldset>
+
+        <input type="submit" name="sumbit" value="Submit" class="submitButton">
+
+        <footer>
+            &copy;<span id="copyrightYear"></span>| The Temple Inn & Suits | 4800 Montgomery Ln #300, Bethesda, MD 20814 | Consuelo Hansen
+        </footer>
+
+        </body>
+
+</html>
