@@ -1,6 +1,7 @@
 {
     "temples": [{
-            "name": "Brigham City Utah \nBrigham City UT 84302 - 2560\nUnited States ",
+            "name": "Brigham City Temple",
+            "address": "Brigham City Utah | Brigham City UT 84302 - 2560 | United States ",
             "telephone": "(1) 435-695-2170",
             "email": "brighamcity@lds.org",
             "services": ["No clothing rental available",
@@ -26,12 +27,12 @@
                 "Tuesday, 31 December 2019 (Limited Hours)"
             ],
             "summary": "",
-            "imageurl": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brigham-city-utah/400x640/brigham-city-utah-temple-lds-1001325-wallpaper.jpg,",
+            "imageurl": "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brigham-city-utah/400x250/brigham-city-temple-lds-1027480-wallpaper.jpg",
             "citycode": "5771960"
         },
         {
             "name": "Laie Hawaii Temple",
-            "address": "55-600 Naniloa Loop\nLaie HI 96762 - 2202\nUnited States ",
+            "address": "55-600 Naniloa Loop | Laie HI 96762 - 2202 | United States ",
             "telephone": "(1) 808-293-2427",
             "email": "laiehawaii@lds.org",
             "services": ["No clothing rental available",
@@ -51,7 +52,7 @@
                 "5:00 PM  Walk - ins Only - English ",
                 "6:00 PM  Walk - ins and Appointments - English ",
                 "7:00 PM  Walk - ins and Appointments - English ",
-                "8:00 PM  Walk - ins Only - English ",
+                "8:00 PM  Walk - ins Only - English "
             ],
             "templeclosureschedule": ["Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
                 "Friday, 27 December 2019 (Limited Hours)",
@@ -64,7 +65,7 @@
         },
         {
             "name": "Manti Utah Temple",
-            "address": "200 E 510 N\nManti UT 84642 - 1701\nUnited States ",
+            "address": "200 E 510 N | Manti UT 84642 - 1701 | United States ",
             "telephone": "(1) 435-835-2291",
             "email": "manti@lds.org",
             "services": ["Clothing rental available",
@@ -101,7 +102,7 @@
         },
         {
             "name": "Provo City Center Temple",
-            "address": "50 South University Ave\nProvo UT 84601\nUnited States ",
+            "address": "50 South University Ave | Provo UT 84601 | United States ",
             "telephone": "(1) 801-343-2700",
             "email": "provocity@lds.org",
             "services": ["Clothing rental available",
